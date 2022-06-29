@@ -22,3 +22,11 @@ if [ $1 = "--logs" ]; then
         done
     fi
 fi
+
+if [ $1 = "--help" ]; then
+    echo "
+- „skrypt.sh --date” wyświetli dzisiejszą datę
+- „skrypt.sh --logs” utworzy automatycznie 100 plików logx.txt
+- „skrypt.sh --logs 30” utworzenie automatycznie 30 plików, analogicznie
+jak wyżej, ale z obsługą argumentu liczby plików"
+fi
