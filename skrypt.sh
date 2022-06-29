@@ -28,5 +28,9 @@ if [ $1 = "--help" ] || [ $1 = "-h" ]; then
 - „skrypt.sh --date” wyświetli dzisiejszą datę
 - „skrypt.sh --logs” utworzy automatycznie 100 plików logx.txt
 - „skrypt.sh --logs 30” utworzenie automatycznie 30 plików, analogicznie
+jak wyżej, ale z obsługą argumentu liczby plików
+- „skrypt.sh -d” wyświetli dzisiejszą datę
+- „skrypt.sh -l” utworzy automatycznie 100 plików logx.txt
+- „skrypt.sh -l 30” utworzenie automatycznie 30 plików, analogicznie
 jak wyżej, ale z obsługą argumentu liczby plików"
 fi 
