@@ -6,10 +6,19 @@ if [ $1 = "--date" ]; then
 fi
 
 if [ $1 = "--logs" ]; then
-    for i in {1..100}
-    do
-        date=$(date)
-        name="log$i.txt"
-        echo "$name $0 $date" >> $name
-    done
+    if [ $2 ]; then 
+        for (( i=1; i<=$2; i++ ))
+        do
+            date=$(date)
+            name="log$i.txt"
+            echo "$name $0 $date" >> $name
+        done
+    else 
+        for i in {1..100}
+        do
+            date=$(date)
+            name="log$i.txt"
+            echo "$name $0 $date" >> $name
+        done
+    fi
 fi
